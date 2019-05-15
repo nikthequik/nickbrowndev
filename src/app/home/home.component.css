@@ -1,0 +1,23 @@
+#bg {
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+    z-index: -100;
+  }
+#bg img {
+  position: absolute; 
+  top: 7%; 
+  left: 2%; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto;
+  max-height: 67%;
+}
+
+@media only screen and (max-width: 600px) {
+  #bg img {
+    left: -70%;
+  }
+}

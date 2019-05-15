@@ -1,0 +1,16 @@
+div.card {
+    margin-top: 1em;
+    max-height: 90%;
+}
+
+div.view.view-cascade.overlay {
+    padding: 1em 0 0 0;
+}
+
+@media only screen and (max-width: 700px) {
+    div.card {
+        transform: scale(0.9);
+        margin-top: 0;
+        max-height: 100%;
+    }
+}

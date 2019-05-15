@@ -1,35 +1,57 @@
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark black">
 
-  <mdb-navbar-brand><a class="navbar-brand" href="#">Nick Brown Dev</a></mdb-navbar-brand>
+  <mdb-navbar-brand>
+    <a class="navbar-brand" 
+      routerLink="/home"
+      routerLinkActive="active">Nick Brown Dev
+    </a>
+  </mdb-navbar-brand>
   <links>
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-            <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+            <a class="nav-link waves-light" 
+              mdbWavesEffect
+              routerLink="/home"
+              routerLinkActive="active">Home
+              <span class="sr-only">(current)</span>
+            </a>
         </li>
-        <li class="nav-item dropdown" dropdown>
-          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-          Projects<span class="caret"></span></a>
-          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+        <li class="nav-item dropdown">
+          <a mdbWavesEffect type="button" 
+            class="nav-link waves-light" 
+            mdbWavesEffect
+            routerLink="/projects"
+            routerLinkActive="active">
+            Projects
+            <!-- <span class="caret"></span> -->
+          </a>
+          <!-- <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
               <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
               <div class="divider dropdown-divider"></div>
               <a class="dropdown-item waves-light" mdbWavesEffect href="#">Democralink</a>
-          </div>
+          </div> -->
         </li>
-        <li class="nav-item dropdown" dropdown>
-          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-          Articles<span class="caret"></span></a>
-          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+        <li class="nav-item">
+          <a mdbWavesEffect type="button" 
+            class="nav-link waves-light" 
+            mdbWavesEffect
+            routerLink="/articles"
+            routerLinkActive="active">
+            Articles
+             <!-- <span class="caret"></span> -->
+          </a>
+          <!-- <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
               <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
               <div class="divider dropdown-divider"></div>
               <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
-          </div>
+          </div> -->
         </li>
       </ul>
-      <form class="form-inline waves-light" mdbWavesEffect>
+      <!-- <form class="form-inline waves-light" mdbWavesEffect>
           <div class="md-form my-0">
               <input class="form-control mr-sm-2" type="text" placeholder="Search">
           </div>
-      </form>
+      </form> -->
   </links>
 
 </mdb-navbar>
